@@ -33,5 +33,20 @@ Finally if you want to redirect the user to user profile when authorized user ac
 
 # Back_End_Part:
 
+For back end need to install npm packages – express, mongoose, body-parser, bcryptjs and cors using npm i --save express mongoose body-parser bcryptjs cors command. Now, we need to start MongoDB server. I used MongoDB Compass Community. Create a new Database. Let’s create a mongoose model for user details. For that we need a model file user.model.js inside models folder.
+
+Inside password field we will store encrypted password. Password encryption can be done using bcryptjs. Before encryption password will be merged with a random string (salt secret). Which is more secure than direct password encryption. We have defined some validations like required validation, minlength validation and custom validation for email pattern. Also unique constraint for email address.
+
+ Inside the folder let’s add config.json file to store configuration details like PORT number for express server and MONGODB_URI for database details. Now we can save new user details inside MongoDB using mongoose model. Here, exported register function, which can handle user registration request. Inside the save function we have a callback function to be executed after save operation.
+ 
+ Now it’s time to create the route javascript file – app.js. All of the modules inside application are executed from route file.
+ 
+ Finally, we have started the express server at port number. Now in-order to add a new user, we have to make a post request to ‘/api/register’ with new user details.
+
+
+
+
+
+
 
 
