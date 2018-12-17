@@ -25,7 +25,7 @@ So let’s block such type of unauthorized request. for that used guards from An
 
 Inside user profile component I want to show the details of logged in user. so first of all define getUserProfile function in UserService. Implemented this "/userprofile" as a private route in Node JS, so have to send jwt token in request header.
 
-Finally if you want to redirect the user to user profile when authorized user access login page. You can update the sign in component ngOnInit lifecycle.
+Finally,if you want to redirect the user to user profile when authorized user access login page. You can update the sign in component ngOnInit lifecycle.
 
 # Back_End_Part:
 
