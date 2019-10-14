@@ -38,8 +38,3 @@ Inside the folder let’s add config.json file to store configuration details li
 Now it’s time to create the route javascript file – app.js. All of the modules inside application are executed from route file.
  
 Finally, started the express server at port number. Now in-order to add a new user, we have to make a post request to ‘/api/register’ with new user details.
-
-
-
-fghjk
-
